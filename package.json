@@ -1,0 +1,28 @@
+{
+  "name": "lunchbot",
+  "version": "1.0.0",
+  "description": "LunchBot is a real-time kitchen analytics and coordination bot designed to track and optimize lunch flow within an organization.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhamedhadzalic/lunchbot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/muhamedhadzalic/lunchbot/issues"
+  },
+  "homepage": "https://github.com/muhamedhadzalic/lunchbot#readme",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@slack/bolt": "^4.7.0",
+    "@supabase/supabase-js": "^2.103.0",
+    "dotenv": "^17.4.1",
+    "node-cron": "^4.2.1"
+  }
+}
