@@ -4,8 +4,10 @@
   "description": "LunchBot is a real-time kitchen analytics and coordination bot designed to track and optimize lunch flow within an organization.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "start": "node index.js",
+  "dev": "node index.js",
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/muhamedhadzalic/lunchbot.git"
