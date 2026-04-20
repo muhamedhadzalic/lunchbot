@@ -7,23 +7,20 @@ datasource db {
   provider = "postgresql"
 }
 
+enum ResponseType{
+  JOIN
+  SKIP
+  RESERVE
+}
+
 model LunchResponse {
   id        Int      @id @default(autoincrement())
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   slackId   String
   slackName String
-  response  String
+  response  ResponseType
   lunchDate String
 
   @@unique([slackId, lunchDate])
-}
-
-model Reservation {
-  id        Int      @id @default(autoincrement())
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-  slackId   String
-  slackName String
-  lunchDate String
 }
