@@ -3,7 +3,7 @@ const { getTargetDate } = require('./utils/helpers');
 const { posaljiAnketu } = require('./messages/lunchPoll');
 
 module.exports = (app) => {
-  cron.schedule('0 14 * * 1-5', async () => {
+  cron.schedule('* * * * *', async () => {
     try {
       const targetDate = getTargetDate();
       await posaljiAnketu(app, targetDate);
