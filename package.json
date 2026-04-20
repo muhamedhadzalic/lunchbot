@@ -4,6 +4,8 @@
   "description": "LunchBot is a real-time kitchen analytics and coordination bot designed to track and optimize lunch flow within an organization.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,9 +22,13 @@
   "homepage": "https://github.com/muhamedhadzalic/lunchbot#readme",
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
+    "@prisma/adapter-pg": "^7.7.0",
+    "@prisma/client": "^7.7.0",
     "@slack/bolt": "^4.7.0",
     "@supabase/supabase-js": "^2.103.0",
     "dotenv": "^17.4.1",
-    "node-cron": "^4.2.1"
+    "node-cron": "^4.2.1",
+    "pg": "^8.20.0",
+    "prisma": "^7.7.0"
   }
 }
